@@ -53,7 +53,7 @@
       
     
       
-      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#testimonials">Testimonials</a>   
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#testimonials">Testimonials &amp; Reviews</a>   
          
       
       <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#faqs">Faqs</a>
@@ -67,9 +67,9 @@
             <a x-on:click.prevent="open = true" class="" href="">Send Us a Text</a>
         
       
-        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black text-black bg-opacity-75 z-50">
                 <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-                        <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
+                        <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
                             <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
                         </div>
@@ -83,7 +83,7 @@
                             <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
                         </div>
                         <div class="block">
-                            <button type="button" onclick= "send_sms(1, 'Grangers-Yard-and-Snow')" class="w-full px-3 py-4 font-bold font-lg text-white bg-black-900 rounded-lg">Send</button>
+                            <button type="button" onclick= "send_sms(1, 'Grangers-Yard-and-Snow')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-black   rounded-lg">Send</button>
                         </div>
                         
     
@@ -116,8 +116,8 @@
                     <h5 class="text-3xl font-extrabold">Send us a text</h5> 
                 </button>
                 <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
-                    <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-                            <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
+                    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+                            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
                             <div class="block mb-4 border border-gray-200 rounded-lg">
                                 <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
                             </div>
@@ -131,7 +131,7 @@
                                 <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
                             </div>
                             <div class="block">
-                                <button type="button" onclick= "send_sms(2, 'Grangers-Yard-and-Snow')" id= "send" class="w-full px-3 py-4 font-bold font-lg text-white bg-black-900 rounded-lg">Send</button>
+                                <button type="button" onclick= "send_sms(2, 'Grangers-Yard-and-Snow')" id= "send" class="w-full px-3 py-4 font-bold font-lg text-white  bg-black   rounded-lg">Send</button>
                             </div>
                             
      
@@ -404,165 +404,20 @@
         <div class="px-16 ">
             <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
                 <div class = "sm:mb-4 md:mb-0">
-                <p class="relative flex  text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider uppercase lg:justify-center lg:items-center mb-10">Don't just take our word for it</p>
+                <p class="relative flex  text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider uppercase lg:justify-center lg:items-center mb-10">Don&#x27;t just take our word for it</p>
                 </div>
 
 
                 <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
                     
-                    Testimonials & Reviews</h5>
+                    Testimonials &amp; Reviews</h5>
                 <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
                 <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold  text-black  ">Kim Young</h4>
-                            <p class=" text-black ">Homeowner</p>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl lg:text-left   text-black ">"What can I say! They were freaking amazing! Fast communication and great after services! Had a leak on the gutter and given the weather, it wasn’t sealing well on the first try. Matt assured me that they will take care of the leak! Jeff and Matt came out 4 times to make sure the proper seal! We had heavy rain today and no leak! I was so impressed on their services! Anyone looking into their services, do not hesitate! You won’t regret it!"</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold  text-black  ">Mary Rush</h4>
-                            <p class=" text-black ">Homeowner</p>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl lg:text-left   text-black ">"Highly recommend!!!  I had my eaves done and right off the bat they were responsive, great communication, professional, and Jeff went above and beyond...no cut corners!  Fast, reliable service and the work is outstanding. Thanks!!"</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold  text-black  ">Alicia McGaw</h4>
-                            <p class=" text-black ">Homeowner</p>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl lg:text-left   text-black ">"We had our Christmas lights installed by these guys, our house looks amazing very happy with it."</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold  text-black  ">West Meadow Stables</h4>
-                            <p class=" text-black ">Business</p>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl lg:text-left   text-black ">"We booked Granger’s Yard and Snow to clean our eaves troughs and install Christmas lights. EXCELLENT customer service right from our first inquiry until the last bulb was installed.  There was no hesitation to answer our questions or in providing us information about the services that they were providing. The team arrived on time, were very friendly and exceeded our expectations. Thank you so much Mat and staff. Definitely a 5 star review from West Meadow Stables. We look forward to doing business with you again."</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
-                        
-                        <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold  text-black  ">Sonia Soares</h4>
-                            <p class=" text-black ">Homeowner</p>
-                            <div class="flex flex-row items-start ">
-                                
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
-                                
-                                
-                            </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl lg:text-left   text-black ">"I contacted Mat for a quote and he was so quick to respond to my inquiry and provided an available installation date promptly!  I was able to get my exterior Christmas light installation within a couples of days of our initial contact. I am so impressed with how quick and efficient the communication was! Jeff arrived promptly and installed our exterior house lights in a timely manner and with great precision. Mat and Jeff were both very friendly in our encounters and I will be recommending them to friends and family for easy and quick light installation! Granger’s Yard &amp; Snow was very well priced and the service was excellent. I will be using them again for our family’s future yard and home needs!"</blockquote>                           
-                        </div>
-                    </div>
-                    
-                    </div>
-
-                    
-            
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
                             <h4 class="font-bold  text-black  ">Arelene Carroll</h4>
@@ -582,7 +437,152 @@
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl lg:text-left   text-black ">"Very trustworthy.  As a widow it is sometimes hard to find people to help you that you can trust.  They go above and beyond."</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-black ">"Very trustworthy.  As a widow it is sometimes hard to find people to help you that you can trust.  They go above and beyond."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-black  ">Kim Young</h4>
+                            <p class=" text-black ">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-black ">"What can I say! They were freaking amazing! Fast communication and great after services! Had a leak on the gutter and given the weather, it wasn’t sealing well on the first try. Matt assured me that they will take care of the leak! Jeff and Matt came out 4 times to make sure the proper seal! We had heavy rain today and no leak! I was so impressed on their services! Anyone looking into their services, do not hesitate! You won’t regret it!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-black  ">Mary Rush</h4>
+                            <p class=" text-black ">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-black ">"Highly recommend!!!  I had my eaves done and right off the bat they were responsive, great communication, professional, and Jeff went above and beyond...no cut corners!  Fast, reliable service and the work is outstanding. Thanks!!"</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-black  ">Alicia McGaw</h4>
+                            <p class=" text-black ">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-black ">"We had our Christmas lights installed by these guys, our house looks amazing very happy with it."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-black  ">West Meadow Stables</h4>
+                            <p class=" text-black ">Business</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-black ">"We booked Granger’s Yard and Snow to clean our eaves troughs and install Christmas lights. EXCELLENT customer service right from our first inquiry until the last bulb was installed.  There was no hesitation to answer our questions or in providing us information about the services that they were providing. The team arrived on time, were very friendly and exceeded our expectations. Thank you so much Mat and staff. Definitely a 5 star review from West Meadow Stables. We look forward to doing business with you again."</blockquote>                           
+                        </div>
+                    </div>
+                    
+                    </div>
+
+                    
+            
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
+                        
+                        <div class="flex flex-col justify-start items-center lg:items-start ">
+                            <h4 class="font-bold  text-black  ">Sonia Soares</h4>
+                            <p class=" text-black ">Homeowner</p>
+                            <div class="flex flex-row items-start ">
+                                
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                <span class = " text-black "> <i class="fas fa-star"> </i> </span>
+                                
+                                
+                            </div>
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-black ">"I contacted Mat for a quote and he was so quick to respond to my inquiry and provided an available installation date promptly!  I was able to get my exterior Christmas light installation within a couples of days of our initial contact. I am so impressed with how quick and efficient the communication was! Jeff arrived promptly and installed our exterior house lights in a timely manner and with great precision. Mat and Jeff were both very friendly in our encounters and I will be recommending them to friends and family for easy and quick light installation! Granger’s Yard &amp; Snow was very well priced and the service was excellent. I will be using them again for our family’s future yard and home needs!"</blockquote>                           
                         </div>
                     </div>
                     
@@ -683,7 +683,7 @@
                 <li> <a href="#our-work" class=" px-2 md:px-4 text-black-500 hover:text-white">Our Best Work</a> </li>
                 
                 
-                <li> <a href="#testimonials" class="px-2 md:px-4 text-black-500 hover:text-white">Testimonials</a></li>
+                <li> <a href="#testimonials" class="px-2 md:px-4 text-black-500 hover:text-white">Testimonials &amp; Reviews</a></li>
                 
                 
                 <li> <a href="#faqs" class="px-2 md:px-4 text-black-500 hover:text-white">Faqs</a></li>
